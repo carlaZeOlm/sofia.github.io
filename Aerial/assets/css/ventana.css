@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("fontawesome-all.min.css");
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+
+/* VENTANAS*/
+.ventana{
+	background-color:goldenrod;
+	width:300px;
+	padding: 10px 20px;
+	margin: 20% auto;
+	position: relative;
+  }
+  .modal{
+	font-family: 'Coiny', cursive;
+	color: black;
+	background-color: rgba(0,0,0,.8);
+	position:fixed;
+	top: 250px;
+	right:0;
+	bottom:0;
+	left:0;
+	opacity:0;
+	pointer-events:none;
+	transition: all 1s;
+  }
+  #IrVentanaFlotante:target{
+	opacity:1;
+	pointer-events:auto;
+  }
